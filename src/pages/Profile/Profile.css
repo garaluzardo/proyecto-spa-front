@@ -1,0 +1,33 @@
+.profile {
+    margin-top: 80px; /* Para asegurarse de que no se superponga al navbar */
+    padding: 20px;
+  }
+  
+  .profile-page {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .book-item, .review-item, .favorite-item, .challenge-item {
+    margin-bottom: 10px;
+  }
+  

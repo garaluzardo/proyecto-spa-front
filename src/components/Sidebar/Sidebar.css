@@ -1,0 +1,60 @@
+.sidebar {
+    position: fixed;
+    top: 110px; 
+    bottom: 110px;
+    left: -230px; /* Oculto parcialmente por defecto */
+    width: 200px;
+    background-color: rgba(244, 241, 218, 0.9);
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.3s ease, box-shadow 0.3s ease;
+}
+.sidebar:hover {
+    left: 20px; /*Aparición cuando se hace hover*/
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.sidebar ul {
+    padding-left: 0;
+}
+.sidebar li {
+    list-style-type: none;
+    margin: 15px 0;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+.sidebar li:hover {
+    background-color: #d8d1d1; /* Color al pasar el ratón por encima */
+}
+
+
+/* Submenú de Shelves: estilos para el contenedor*/
+.shelves {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+.shelves:hover .shelves-list {
+    display: block; /* Manejo: se muestra cuando hacemos hoover sobre Shelves */
+}
+.shelves-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+    display: none; /* Oculto por defecto cuando no se está haciendo hoover */
+}
+
+/* Submenú: Estilo para los elementos o items  */
+.shelves-list li {
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.shelves-list li:hover {
+    background-color: #eaeaea;
+}

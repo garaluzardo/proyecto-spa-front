@@ -1,0 +1,8 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: "DM Sans", serif;
+    background-color: #d6d3c0;
+    margin: 0;
+    padding: 0;
+}

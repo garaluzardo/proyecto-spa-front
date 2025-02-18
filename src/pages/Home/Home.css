@@ -1,0 +1,30 @@
+.home-page {
+    display: flex;
+    flex-direction: column; /* H1 y home-page-content en columna */
+    align-items: center;
+    max-width: 1200px; /* Ajusta según tu preferencia */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .home-page-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre columnas */
+    width: 100%;
+  }
+  
+  .content1,
+  .content2,
+  .content3 {
+    flex: 1; /* Hace que las columnas sean del mismo tamaño */
+    background-color: #f3f3f3;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }

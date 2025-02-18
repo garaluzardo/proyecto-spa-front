@@ -1,0 +1,12 @@
+.page {
+    min-height: calc(100vh - 60px); /* Ajusta la altura sin solaparse con el navbar */
+    padding: 20px;
+    background-color: #c4c1af;
+    display: flex;
+    align-items: center;
+    width: 90%; /* Igual al ancho del navbar */
+    max-width: 1200px; /* Igual al max-width del navbar */
+    margin-left: auto; /* Centrado de la página */
+    margin-right: auto; /* Centrado de la página */
+    margin-top: 100px; /* Deja espacio para el navbar */
+}

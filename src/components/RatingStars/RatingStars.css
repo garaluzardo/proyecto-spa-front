@@ -1,0 +1,35 @@
+.rating-stars {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .star {
+    font-size: 30px;
+    color: #d3d3d3;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    position: relative;
+  }
+  
+  .star.full {
+    color: #ffcc00;
+  }
+  
+  .star.empty {
+    color: #d3d3d3;
+  }
+  
+  .star.half {
+    color: #ffcc00;
+    background: linear-gradient(to left, #ffcc00 50%, #d3d3d3 50%);
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 50%;
+    position: absolute;
+    left: 0;
+  }
+  
+  .star:hover {
+    color: #ffcc00;
+  }
+  

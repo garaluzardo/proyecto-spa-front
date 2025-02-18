@@ -1,34 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import './styles/App.css'
+
+import Navbar from "./components/Navbar/Navbar.jsx";  
+import Sidebar from "./components/Sidebar/Sidebar.jsx";
+/* import Footer from "./components/Footer/Footer.jsx"; Aún no sé será un componente final en la App */
+
+import Home from "./pages/Home/Home.jsx";
+import NotFound from "./pages/NotFound/NotFound.jsx";
+import Profile from "./pages/Profile/Profile.jsx";
+import BooksList from "./pages/BooksList/BooksList.jsx";
+import About from "./pages/About/About.jsx";
+import Shelves from "./pages/Shelves/Shelves.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
+  // Manejo del saludo dinámico al usuario
+  const [username, setUsername] = useState("");
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem("user")) || { name: "Gara" };
+    setUsername(user.name);
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+<Router>
+<Navbar />
+<Sidebar />
+          <Routes>
+            <Route path="/" element={<Home username={username}/>} />
+            <Route path="/Profile" element={<Profile />} />
+            <Route path="/BooksList" element={<BooksList />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Shelves" element={<Shelves />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+{/*           <Footer /> */}
+    </Router>
   )
 }
 
