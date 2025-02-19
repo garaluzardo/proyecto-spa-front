@@ -3,18 +3,18 @@
   top: 20px; /* Separa el navbar del top */
   left: 50%; /* Centra horizontalmente */
   transform: translateX(-50%); /* Ajusta el centrado */
-  width: 90%; /* Ajusta el ancho para que no ocupe toda la pantalla */
-  max-width: 1200px;
+  width: 70%; /* Ajusta el ancho para que no ocupe toda la pantalla */
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-color: rgba(244, 241, 218, 0.9);
+  background-color: rgba(228, 217, 211, 0.9);
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   z-index: 1000;
   overflow: hidden;
+  box-sizing: border-box;
   }
   
   .navbar-logo {

@@ -2,9 +2,9 @@
     position: fixed;
     top: 110px; 
     bottom: 110px;
-    left: -230px; /* Oculto parcialmente por defecto */
-    width: 200px;
-    background-color: rgba(244, 241, 218, 0.9);
+    left: -170px; /* Oculto parcialmente por defecto */
+    width: 180px;
+    background-color: rgba(160, 156, 154, 0.9);
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.15);
     padding: 20px;
     border-radius: 15px;
@@ -29,7 +29,7 @@
     border-radius: 5px;
 }
 .sidebar li:hover {
-    background-color: #d8d1d1; /* Color al pasar el ratón por encima */
+    background-color: #b4b0b0; /* Color al pasar el ratón por encima */
 }
 
 
