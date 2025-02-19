@@ -1,0 +1,37 @@
+.like-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+/*   border: 2px solid #ddd; */
+  border-radius: 100%; /* Hace que el botón sea completamente redondo */
+  width: 30px; /* Ajusta el tamaño del botón */
+  height: 30px;
+  padding: 0; /* Elimina el padding extra */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #555;
+  font-family: Arial, sans-serif;
+  border: none;
+}
+
+.like-button:hover {
+  background-color: #f8f8f8;
+  border-color: #999;
+}
+
+.like-button.liked {
+  border-color: #ff6347;
+  background-color: rgba(255, 99, 71, 0.2);
+}
+
+.like-icon {
+  font-size: 20px;
+  color: inherit;
+}
+
+.like-text {
+  display: none; /* Oculta el texto para que solo se vea el icono */
+}
+
+  

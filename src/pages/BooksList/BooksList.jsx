@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { getBooks } from '../../api/bookApi';
-import BookCard from '../../components/BookCard/BookCard.jsx'; // Importamos el nuevo componente BookCard
+import BookCard from '../../components/BookCard/BookCard.jsx';
 import './BooksList.css';
+import AddButton from '../../components/Buttons/AddButton/AddButton.jsx';
 
 export default function BookList({ onCreateBook, onDeleteBook }) {
   const [books, setBooks] = useState([]);
-  const [loading, setLoading] = useState(true); // Estado de carga
-  const [error, setError] = useState(null); // Estado para manejar errores
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null); 
 
   useEffect(() => {
     const fetchBooks = async () => {
@@ -29,12 +30,8 @@ export default function BookList({ onCreateBook, onDeleteBook }) {
   return (
     <div className="page">
       <div className="books-list-page">
-        <h1>Books List</h1>
 
-        {/* Botón para agregar un libro */}
-        <button onClick={() => onCreateBook({ title: 'New Book', author: 'Unknown', imageUrl: '' })}>
-          Add New Book
-        </button>
+        <AddButton onClick={() => onCreateBook({ title: 'New Book', author: 'Unknown', imageUrl: '' })} />
 
         <div className="books-list">
           {books.map((book) => (

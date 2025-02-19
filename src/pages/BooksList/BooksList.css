@@ -11,20 +11,6 @@
     margin-bottom: 20px;
   }
   
-  .books-list-page button {
-    padding: 10px 15px;
-    font-size: 1rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-  
-  .books-list-page button:hover {
-    background-color: #45a049;
-  }
-  
   .books-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

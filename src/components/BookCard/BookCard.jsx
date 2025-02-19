@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './BookCard.css';
-import LikeButton from '../Buttons/LikeButton';
+import LikeButton from '../Buttons/LikeButton/LikeButton';
+import DeleteButton from '../Buttons/DeleteButton/DeleteButton';
 
 export default function BookCard({ book, onDeleteBook }) {
   return (
@@ -13,7 +14,7 @@ export default function BookCard({ book, onDeleteBook }) {
       <p>Bookshelve: {book.bookshelve}</p>
       <div className="actions">
         <Link to={`/books/${book.id}`}>Ver más</Link>
-        <button onClick={() => onDeleteBook(book.id)}>Delete</button>
+        <DeleteButton onClick={() => onDeleteBook(book.id)} />
       </div>
       <LikeButton />
     </div>

@@ -11,7 +11,7 @@ function LikeButton() {
   return (
     <button className={`like-button ${liked ? 'liked' : ''}`} onClick={toggleLike}>
       <span className="like-icon">{liked ? '❤️' : '🤍'}</span>
-      <span className="like-text">{liked ? 'Liked' : 'Like'}</span>
+     {/*  <span className="like-text">{liked ? 'Liked' : 'Like'}</span> */}
     </button>
   );
 };

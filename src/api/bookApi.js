@@ -1,5 +1,4 @@
-import axios from "axios";
-const API_URL = "http://localhost:5005/BooksData";
+const API_URL = "http://localhost:5005/books-data";
 
 // Obtener todos los libros (Read)
 export async function getBooks() {
