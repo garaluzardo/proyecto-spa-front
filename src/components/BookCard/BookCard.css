@@ -1,0 +1,54 @@
+/* src/components/BookCard/BookCard.css */
+.book-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .book-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .book-card p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .book-card .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .book-card .actions a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1rem;
+  }
+  
+  .book-card .actions button {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .book-card .actions button:hover {
+    background-color: #e53935;
+  }
+  

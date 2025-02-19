@@ -5,6 +5,7 @@ function Sidebar() {
     const navigate = useNavigate();
 
     return (
+        
         <div className="sidebar">
             <ul>
                 <li onClick={() => navigate("/")}>Home</li>

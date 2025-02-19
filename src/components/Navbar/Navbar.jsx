@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <img src="/assets/BookLogo.png" alt="Logo" className="logo" />
-        <p className="title"><b>Book</b>Nook</p>
+        <p className="title"><b>B</b>N</p>
       </div>
       <div className="search-bar">
         <input type="text" placeholder="Buscar..." />
