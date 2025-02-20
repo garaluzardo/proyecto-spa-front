@@ -1,8 +1,8 @@
 .home-page {
     display: flex;
-    flex-direction: column; /* H1 y home-page-content en columna */
+    flex-direction: column; 
     align-items: center;
-    max-width: 1200px; /* Ajusta según tu preferencia */
+    max-width: 1200px;
   }
   
   h1 {
@@ -14,14 +14,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 20px; /* Espacio entre columnas */
+    gap: 20px;
     width: 100%;
   }
   
   .content1,
   .content2,
   .content3 {
-    flex: 1; /* Hace que las columnas sean del mismo tamaño */
+    flex: 1;
     background-color: #f3f3f3;
     padding: 20px;
     text-align: center;

@@ -7,7 +7,7 @@ export default function ConfirmationPopUp({ message, onConfirm, onCancel }) {
       <div className="popup">
         <p>{message}</p>
         <button onClick={onConfirm}>Yes</button>
-        <button onClick={onCancel}>Cancel</button>
+        <button onClick={onCancel}>Nope</button>
       </div>
     </div>
   );
