@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import "./AddButton.css";
-import AddBookForm from "../../Forms/Add/AddBookForm"; // Importar el formulario
+import AddBookForm from "../../Forms/Add/AddBookForm";
 
 function AddButton({ onCreateBook }) {
   const [showForm, setShowForm] = useState(false);
 
   const handleClick = () => {
-    setShowForm(true); // Mostrar el formulario al hacer clic
+    setShowForm(true);
   };
 
   const handleCloseForm = () => {
-    setShowForm(false); // Ocultar el formulario
+    setShowForm(false);
   };
 
   return (
