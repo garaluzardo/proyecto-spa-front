@@ -1,9 +1,9 @@
-const API_URL = "http://localhost:5005/books-data";
+const API_URL_BOOKS = "http://localhost:5005/books-data";
 
 // Obtener todos los libros (Read)
 export async function getBooks() {
     try {
-        const response = await fetch(API_URL);
+        const response = await fetch(API_URL_BOOKS);
         if (!response.ok) throw new Error("Error al obtener los libros");
         return await response.json();
     } catch (error) {
@@ -15,7 +15,7 @@ export async function getBooks() {
 // Crear un nuevo libro (Create)
 export async function createBook(bookData) {
     try {
-        const response = await fetch(API_URL, {
+        const response = await fetch(API_URL_BOOKS, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -33,7 +33,7 @@ export async function createBook(bookData) {
 // Actualizar un libro (Update)
 export async function updateBook(bookId, updatedData) {
     try {
-        const response = await fetch(`${API_URL}/${bookId}`, {
+        const response = await fetch(`${API_URL_BOOKS}/${bookId}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
@@ -51,7 +51,7 @@ export async function updateBook(bookId, updatedData) {
 // Eliminar un libro (Delete)
 export async function deleteBook(bookId) {
     try {
-        const response = await fetch(`${API_URL}/${bookId}`, {
+        const response = await fetch(`${API_URL_BOOKS}/${bookId}`, {
             method: "DELETE"
         });
         if (!response.ok) throw new Error("Error al eliminar el libro");
