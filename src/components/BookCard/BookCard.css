@@ -1,43 +1,60 @@
-.book-card {
-    border: 1px solid #ddd;
+   .book-card {
     border-radius: 8px;
-    padding: 20px;
-    background-color: #d6d3c0;
+    background-color: #d6d3c03b;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block; /* Ajusta el tamaño al contenido */
+    position: relative; /* Para posicionar los botones de manera relativa */
+    overflow: hidden; /* Evita que los botones se salgan del contenedor */
+    padding: 10px; /* Espacio interno para la imagen */
+    max-width: 180px; /* Reducimos el ancho máximo de la tarjeta */
+    width: 100%; /* Asegura que no exceda el ancho máximo */
+    height: auto;
   }
   
   .book-card:hover {
     transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
   }
   
-  .book-card img {
-    width: 50%;
-    height: auto;
-    border-radius: 4px;
-    object-fit: contain;
-  }
-  
-  .book-card h3 {
-    font-size: 1.3rem;
-    margin: 10px 0;
-  }
-  
-  .book-card p {
-    margin: 5px 0;
-    color: #555;
-  }
-  
-  .book-card .actions {
+  .book-image-container {
+    width: 100%; /* Ocupa todo el ancho de la tarjeta */
+    height: 280px; /* Altura fija para el contenedor de la imagen */
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita que la imagen se salga del contenedor */
+    border-radius: 4px; /* Bordes redondeados para el contenedor de la imagen */
   }
   
-  .book-card .actions a {
-    text-decoration: none;
-    color: #007BFF;
-    font-size: 1rem;
+  .book-image-container img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: 100%; /* La imagen ocupa toda la altura del contenedor */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    border-radius: 4px; /* Bordes redondeados para la imagen */
+    cursor: pointer;
+  }
+  
+  .book-actions {
+    position: absolute; /* Posiciona los botones de manera absoluta */
+    bottom: 10px; /* Ajusta la posición vertical */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los botones */
+    background-color: rgba(214, 211, 192, 0.9); /* Fondo semitransparente */
+    padding: 5px 10px; /* Espacio interno para los botones */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+    opacity: 0; /* Inicialmente invisibles */
+    visibility: hidden; /* Inicialmente ocultos */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transición suave */
+  }
+  
+  .book-card:hover .book-actions {
+    opacity: 1; /* Mostrar los botones */
+    visibility: visible; /* Hacerlos visibles */
   }
   
   .book-card .actions button {
@@ -50,5 +67,3 @@
   
   .book-card .actions button:hover {
     background-color: #e53935;
-  }
-  

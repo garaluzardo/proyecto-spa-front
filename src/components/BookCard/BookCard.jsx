@@ -25,23 +25,25 @@ export default function BookCard({ book, onDeleteBook }) {
 
   return (
     <div className="book-card">
-      <h3>{book.title}</h3>
-      {book.image_Url && (
-        <Link to={`/books/${book.id}`}>
-          <img src={book.image_Url} alt={book.title} />
-        </Link>
-      )}
-      <p>Author: {book.author}</p>
-      <p>Publisher: {book.publisher}</p>
-      <p>Pages: {book.pages}</p>
-      <p>Bookshelve: {book.bookshelve}</p>
-      <div className="actions">
+      {/* Div para la imagen del libro */}
+      <div className="book-image-container">
+        {book.image_Url && (
+          <Link to={`/books/${book.id}`}>
+            <img src={book.image_Url} alt={book.title} />
+          </Link>
+        )}
+      </div>
+
+      {/* Div para los botones de Like y Delete */}
+      <div className="book-actions">
+        <LikeButton />
         <DeleteButton onClick={handleDeleteClick} />
       </div>
-      <LikeButton />
+
+      {/* Popup de confirmación para eliminar el libro */}
       {showPopup && (
         <ConfirmationPopUp
-          message="Are you shur?"
+          message="Are you sure?"
           onConfirm={handleConfirmDelete}
           onCancel={handleCancel}
         />
@@ -49,4 +51,3 @@ export default function BookCard({ book, onDeleteBook }) {
     </div>
   );
 }
-

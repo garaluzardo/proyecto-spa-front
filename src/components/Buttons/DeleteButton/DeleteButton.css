@@ -1,14 +1,26 @@
 .delete-button {
-    background-color: #f0f8ff;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .delete-button:hover {
-    background-color: #e0f1ff;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-radius: 50%; /* Hace que el botón sea completamente redondo */
+  width: 40px; /* Ajusta el tamaño del botón */
+  height: 40px;
+  padding: 0; /* Elimina el padding extra */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #555; /* Color de la "X" */
+  font-family: Arial, sans-serif;
+  border: none;
+  font-size: 20px; /* Tamaño de la "X" */
+}
+
+.delete-button:hover {
+  background-color: #f8f8f8; /* Fondo al hacer hover */
+}
+
+
+/* Cambiar el color de la "X" al hacer hover */
+.delete-button:hover::after {
+  color: #ff6347; /* Color rojo al hacer hover */
+}

@@ -44,7 +44,8 @@ function AddBookForm({ onCreateBook, onClose }) {
               type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              required
+              placeholder="Title"
+              //required
             />
           </div>
           <div className="form-group">
@@ -53,16 +54,18 @@ function AddBookForm({ onCreateBook, onClose }) {
               type="text"
               value={author}
               onChange={(e) => setAuthor(e.target.value)}
-              required
+              placeholder="Author"
+              //required
             />
           </div>
           <div className="form-group">
-            <label>Image URL</label>
+            <label>Image</label>
             <input
               type="text"
               value={imageUrl}
               onChange={(e) => setImageUrl(e.target.value)}
-              required
+              placeholder="Place your image URL here:"
+              //required
             />
           </div>
           <div className="form-group">
@@ -71,7 +74,8 @@ function AddBookForm({ onCreateBook, onClose }) {
               type="text"
               value={publisher}
               onChange={(e) => setPublisher(e.target.value)}
-              required
+              placeholder="Publisher"
+              //required
             />
           </div>
           <div className="form-group">
@@ -80,7 +84,8 @@ function AddBookForm({ onCreateBook, onClose }) {
               type="number"
               value={pages}
               onChange={(e) => setPages(e.target.value)}
-              required
+              placeholder="0"
+              //required
             />
           </div>
           <div className="form-group">
@@ -89,7 +94,8 @@ function AddBookForm({ onCreateBook, onClose }) {
               type="text"
               value={bookshelve}
               onChange={(e) => setBookshelve(e.target.value)}
-              required
+              placeholder="Read, To Be Read, Favorite..."
+              //required
             />
           </div>
           <div className="form-actions">

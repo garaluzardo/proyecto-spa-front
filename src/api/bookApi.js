@@ -1,4 +1,4 @@
-const API_URL_BOOKS = "http://localhost:5005/books-data";
+const API_URL_BOOKS = /* import.meta.env.VITE_API_URL + "/books-data"; */ "http://localhost:5005/books-data";
 
 // Obtener todos los libros (Read)
 export async function getBooks() {
