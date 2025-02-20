@@ -4,9 +4,9 @@
   align-items: center;
   background-color: transparent;
 /*   border: 2px solid #ddd; */
-  border-radius: 100%; /* Hace que el botón sea completamente redondo */
-  width: 30px; /* Ajusta el tamaño del botón */
-  height: 30px;
+  border-radius: 50%; /* Hace que el botón sea completamente redondo */
+  width: 40px; /* Ajusta el tamaño del botón */
+  height: 40px;
   padding: 0; /* Elimina el padding extra */
   cursor: pointer;
   transition: all 0.3s ease;
@@ -26,8 +26,12 @@
 }
 
 .like-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 20px;
   color: inherit;
+  line-height: 1;
 }
 
 .like-text {
