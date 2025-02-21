@@ -6,5 +6,35 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.about-page h1 {
+   font-weight: bold;
+   color: rgb(0, 0, 0);
+   font-size: 35px;
+   margin-bottom: -10px;
+}
+
+.about-page p {
+    width: 600px;
+    font-size: 1.3rem;
+}
+
+.about-page ul>li {
+    font-size: 1.2rem;
+    list-style: none;
+    margin-left: -15px;
+}
+
+.about-page h1 {
+    text-transform: uppercase;
+}
+
+.italic {
     text-align: center;
+    font-style: italic;
+    padding-top: 15px;
 }

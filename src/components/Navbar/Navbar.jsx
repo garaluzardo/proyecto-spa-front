@@ -12,8 +12,8 @@ const Navbar = () => {
       {/* Sección izquierda */}
       <div className="left-section">
       <Link to="/BooksList" className="logo-container">
-          <img src={LogoBN} alt="Logo" className="logo-bn" />
-          <img src={LogoColor} alt="Logo" className="logo-color" />
+          <img src={"src/images/Logos/logo-bn.png"} alt="Logo" className="logo-bn" />
+          <img src={"src/images/Logos/logo-cl.png"} alt="Logo" className="logo-color" />
           </Link>
         <p className="title"><b>Book</b>Nook</p>
       </div>

@@ -14,7 +14,7 @@
 
 /* Estilo para el contenedor del formulario */
 .book-detail-popup {
-  background-color: rgba(55, 199, 204, 0.4);
+  background-color: rgba(186, 209, 210, 0.4);
   backdrop-filter: blur(5px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   padding: 25px;
@@ -25,6 +25,10 @@
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.book-detail-popup img {
+  margin-top: 30px;
+  border-radius: 7px;
 }
 
 .overlay .book-detail-popup {

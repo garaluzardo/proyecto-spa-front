@@ -49,7 +49,7 @@ export default function BookDetail({ books, onUpdateBook }) {
             <p><strong>Author:</strong> {editedBook.author}</p>
             <p><strong>Publisher:</strong> {editedBook.publisher}</p>
             <p><strong>Pages:</strong> {editedBook.pages}</p>
-            <p><strong>Bookshelve:</strong> {editedBook.bookshelve}</p>
+            <p><strong>Bookshelf:</strong> {editedBook.bookshelve}</p>
             <p><strong>Personal Notes:</strong> {personalNotes}</p>
             <button onClick={handleEdit}>Edit</button>
           </div>
