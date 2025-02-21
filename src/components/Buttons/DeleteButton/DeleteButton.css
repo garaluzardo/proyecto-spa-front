@@ -3,24 +3,31 @@
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  border-radius: 50%; /* Hace que el botón sea completamente redondo */
-  width: 40px; /* Ajusta el tamaño del botón */
+  border-radius: 50%;
+  /* Hace que el botón sea completamente redondo */
+  width: 40px;
+  /* Ajusta el tamaño del botón */
   height: 40px;
-  padding: 0; /* Elimina el padding extra */
+  padding: 0;
+  /* Elimina el padding extra */
   cursor: pointer;
   transition: all 0.3s ease;
-  color: #555; /* Color de la "X" */
+  color: #555;
+  /* Color de la "X" */
   font-family: Arial, sans-serif;
   border: none;
-  font-size: 20px; /* Tamaño de la "X" */
+  font-size: 20px;
+  /* Tamaño de la "X" */
 }
 
 .delete-button:hover {
-  background-color: #f8f8f8; /* Fondo al hacer hover */
+  background-color: #f8f8f8;
+  /* Fondo al hacer hover */
 }
 
 
 /* Cambiar el color de la "X" al hacer hover */
 .delete-button:hover::after {
-  color: #ff6347; /* Color rojo al hacer hover */
+  color: #ff6347;
+  /* Color rojo al hacer hover */
 }

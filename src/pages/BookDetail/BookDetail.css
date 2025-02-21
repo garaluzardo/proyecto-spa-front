@@ -19,13 +19,16 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   padding: 25px;
   border-radius: 20px;
-  width: 500px; /* Aumento del ancho */
-  max-height: 80%; /* Reducción de la altura */
+  width: 500px;
+  /* Aumento del ancho */
+  max-height: 80%;
+  /* Reducción de la altura */
   overflow-y: auto;
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 .book-detail-popup img {
   margin-top: 30px;
   border-radius: 7px;

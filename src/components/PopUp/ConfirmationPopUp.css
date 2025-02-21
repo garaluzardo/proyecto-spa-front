@@ -10,11 +10,13 @@ body.popup-open {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo con opacidad */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo con opacidad */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Para asegurarse de que quede por encima del contenido */
+  z-index: 1000;
+  /* Para asegurarse de que quede por encima del contenido */
 }
 
 /* Estilo del popup */
@@ -23,7 +25,8 @@ body.popup-open {
   padding: 20px;
   border-radius: 8px;
   text-align: center;
-  z-index: 1001; /* Asegura que el popup esté encima del overlay */
+  z-index: 1001;
+  /* Asegura que el popup esté encima del overlay */
 }
 
 /* Botones */
