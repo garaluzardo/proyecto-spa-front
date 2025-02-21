@@ -6,8 +6,8 @@ export default function ConfirmationPopUp({ message, onConfirm, onCancel }) {
     <div className="popup-overlay">
       <div className="popup">
         <p>{message}</p>
-        <button onClick={onConfirm}>Yes</button>
-        <button onClick={onCancel}>Nope</button>
+        <button className="YesButton" onClick={onConfirm}>Yes</button>
+        <button className="NopeButton" onClick={onCancel}>Nope</button>
       </div>
     </div>
   );

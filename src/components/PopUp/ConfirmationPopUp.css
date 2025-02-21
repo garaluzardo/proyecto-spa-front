@@ -1,15 +1,46 @@
+/* Se asegura de que no haya scroll en la página cuando se abre el popup */
+body.popup-open {
+  overflow: hidden;
+}
 
-  .popup {
-    background-color: rgba(255, 255, 255, 0.651);
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  .popup button {
-    margin: 10px;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-  }
-  
+/* El overlay con opacidad baja, cubriendo toda la pantalla */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo con opacidad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Para asegurarse de que quede por encima del contenido */
+}
+
+/* Estilo del popup */
+.popup {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1001; /* Asegura que el popup esté encima del overlay */
+}
+
+/* Botones */
+.popup button {
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Estilo para cada uno de los botones */
+.YesButton {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.NopeButton {
+  background-color: #f44336;
+  color: white;
+}
