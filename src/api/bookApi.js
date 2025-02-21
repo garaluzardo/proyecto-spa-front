@@ -1,8 +1,8 @@
-const API_URL_BOOKS = import.meta.env.VITE_API_URL + "/books-data"; /* "http://localhost:5005/books-data"; */
+const API_URL_BOOKS = /* import.meta.env.VITE_API_URL + "/books-data"; */ "http://localhost:5005/books-data";
 
 // Obtener todos los libros (Read)
 export async function getBooks() {
-    console.log("URL completa que se está llamando:", API_URL_BOOKS);
+    /* console.log("URL completa que se está llamando:", API_URL_BOOKS); */
     try {
         const response = await fetch(API_URL_BOOKS);
         if (!response.ok) throw new Error("Error al obtener los libros");
