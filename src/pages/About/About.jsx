@@ -27,9 +27,9 @@ function About() {
                             <li>📊 Track your progress and reading habits.</li>
                         </ul>
 
-                        <h4 className="italic">
+                   {/*      <h4 className="italic">
                         Reading is a refuge, and Book Nook wants to be its digital reflection.
-                        </h4>
+                        </h4> */}
                     </div>
                 </section>
             </div>
