@@ -9,7 +9,7 @@
   justify-content: space-between; /* Divide el navbar en dos secciones */
   align-items: center;
   padding: 0 20px;
-  background-color: rgba(81, 200, 204, 0.4);
+  background-color: rgba(179, 211, 212, 0.4);
   backdrop-filter: blur(5px);
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -71,8 +71,8 @@
 .right-section {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Barra de búsqueda y foto de perfil a la derecha */
-  gap: 50px; /* Espacio entre la barra de búsqueda y la foto de perfil */
+  justify-content: flex-end;
+  gap: 50px; 
 }
 
 .search-bar {

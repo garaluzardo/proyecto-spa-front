@@ -1,0 +1,10 @@
+.about-page {
+    background-color: rgba(179, 211, 212, 0.192);
+    backdrop-filter: blur(5px);
+    width: 820px;
+    height: 700px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

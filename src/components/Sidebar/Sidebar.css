@@ -75,7 +75,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(81, 200, 204, 0.4);
+  background-color: rgba(179, 211, 212, 0.4);
   backdrop-filter: blur(5px);
   top: 110px; 
   bottom: 110px;
@@ -85,18 +85,18 @@
   will-change: transform;
   border-radius: 20px;
   box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.15);
-  
+  width: 120px;
 }
 
 .sidebar > ul:hover > li:not(:hover) {
   color: rgba(0, 0, 0, 0.849);
-  font-weight: 300;
+  font-weight: 200;
   transition: color 0.3s ease, font-weight 0.3s ease; 
 }
 
 .sidebar > ul > li {
-  color: #2e3544;
-  font-size: 2rem;
+  color: #383838;
+  font-size: 1.5rem;
   cursor: pointer;
   padding: 10px 0;
   width: 160px;
