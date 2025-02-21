@@ -4,6 +4,7 @@
   align-items: center;
   padding: 20px;
   background-color: transparent;
+  gap: 40px;
 }
 
 .books-list-page h1 {
