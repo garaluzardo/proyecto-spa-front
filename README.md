@@ -2,7 +2,7 @@
 
 ## 📖 Descripción
 
-**Book Nook** es una *Single Page Application* inicialmente concebida como un proyecto académico y diseñada con la idea de ofrecer un **registro de lecturas totalmente personalizado**. Su objetivo principal es ayudar a los usuarios a **catalogar su biblioteca personal** y mantener un **seguimiento detallado de sus lecturas** en cualquier momento y lugar.
+**Book Nook** es una *Single Page Application* en fase de desarrollo inicialmente concebida como un proyecto académico y diseñada con la idea de ofrecer un **registro de lecturas totalmente personalizado**. Su objetivo principal es ayudar a los usuarios a **catalogar su biblioteca personal** y mantener un **seguimiento detallado de sus lecturas** en cualquier momento y lugar.
 
 🔹 *Optimizada para acceso rápido desde cualquier dispositivo.*
 
