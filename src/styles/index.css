@@ -4,7 +4,11 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-color: #73665f;
+    /* background-color: #73665f; */
+    background-image: url(./src/images/background-img.jpg);
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center center; /* Centra la imagen en la pantalla */
+    background-attachment: fixed;
 }
 
 #root {
