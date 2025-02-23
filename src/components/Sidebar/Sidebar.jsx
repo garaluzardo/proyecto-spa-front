@@ -21,7 +21,7 @@ function Sidebar() {
                     <li onClick={() => navigate("/shelves")} className="shelves">
                         Shelves
                         <ul className="shelves-list">
-                            <li>To Read</li>
+                            <li>To Be Read</li>
                             <li>Reading</li>
                             <li>Read</li>
                             <li>Favorites</li>

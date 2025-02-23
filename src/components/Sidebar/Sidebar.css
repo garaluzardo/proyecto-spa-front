@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 50px;
+  width: 40px; /*Para ajustar el ancho de la zona que activa la aparición del sidebar*/
   height: 100%;
   cursor: pointer;
   display: flex;
@@ -29,7 +29,7 @@
 }
 
 .sidebar-trigger:hover .sidebar {
-  transform: translateX(50px);
+  transform: translateX(40px);
 }
 
 .sidebar-trigger:hover .sidebar>ul>li>p {
@@ -56,19 +56,18 @@
 
 .bars {
   display: flex;
-  width: 50%;
+  width: 55%;
   align-items: center;
   justify-content: space-between;
   z-index: 10;
 }
 
 .bars>span {
-  width: 4px;
-  height: 40px;
+  width: 3px;
+  height: 30px;
   background: #414141;
   transition: all .4s ease;
 }
-
 
 /*Sidebar*/
 .sidebar {
@@ -79,13 +78,13 @@
   backdrop-filter: blur(5px);
   top: 110px;
   bottom: 110px;
-  transform: translateX(calc(-100% + 51px));
+  transform: translateX(calc(-100% + 40px)); /*Ajustar lo que sorbesale del sidebar cuando está escondido*/
   transition: all .8s cubic-bezier(.785, .135, .15, .86);
-  padding: 50px 100px 50px 50px;
+  padding: 20px 100px 20px 20px;
   will-change: transform;
   border-radius: 20px;
   box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.15);
-  width: 120px;
+  width: 100px;
 }
 
 .sidebar>ul:hover>li:not(:hover) {
